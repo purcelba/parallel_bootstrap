@@ -2,7 +2,7 @@
 
 Use bootstrapping to estimate the sampling distribution of model fit statistics and parameter estimates using cluster computing.
 
-### I. Introduction
+### I. Introduction 
 
 Bootstrapping is a powerful technique to estimate the sampling distribution of a statistic by resampling from the empirical distribution.  We sample from the the observed data with replacement, fit a model to the resulting sample, and compute the statistic of interest based on the fit (e.g., parameter estimates, goodness-of-fit statistic, etc).  This provides several crucial advantages including (1) quantifying uncertainty about paramter estimates, (2) testing for significant improvements in fit across models, and (3) aggregating model predictions over samples for more stable estimates (i.e., bootstrap aggregation or "bagging").  The primary disadvantage is that it can be computationally demanding.  Fortunately, because each sampling and fitting process is independent, this procedure ideal for paralellization.
 
